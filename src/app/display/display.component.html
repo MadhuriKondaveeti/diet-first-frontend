@@ -1,0 +1,11 @@
+<div class="container row">
+    <div class="col-md-12">
+        <div *ngFor="let eachImage of images">
+            <img width=200px height=200px src="data:image/jpeg;base64,{{eachImage.image}}">
+            <div>Name:{{eachImage.name}}</div>
+            <br>
+            <div>Name:{{eachImage.price}}</div>
+
+        </div>
+    </div>
+</div>

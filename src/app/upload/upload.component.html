@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="container row">
+    <div class="col-md-12">
+        <h1>Upload Image</h1>
+    </div>
+</div>
+<div class="container">
+    <input type="text" name="name" [(ngModel)]="name" placeholder="name"/>
+</div>
+<div class="container">
+    <input type="text" name="price" [(ngModel)]="price" placeholder="price"/>
+</div>
+<div class="container row">
+    <div class="col-md-6">
+        <input type="file" (change)="onFileChanged($event)">
+
+    </div>
+    <div class="col-md-6">
+        <input type="button" (click)="onUpload()" value="upload">
+    </div>
+</div>
+<hr />
+
+
